@@ -1,0 +1,35 @@
+/* General rules */
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex.wrap {
+  flex-wrap: wrap;
+}
+
+.flex.center {
+  justify-content: center;
+}
+
+/* Classes */
+.worldmap {
+  width: 70vw;
+  flex-grow: 1;
+
+  &-svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.images-list {
+  margin-top: 10px;
+
+  &-image-item {
+    height: 200px;
+    width: 300px;
+    background: #f00;
+    margin: 10px;
+  }
+}

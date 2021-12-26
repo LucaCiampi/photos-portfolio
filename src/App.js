@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import React from 'react';
+import visitedCountries from './countriesVisited.json'
+import { FilterableCountriesList } from './components/filterable-countries-list/filterable-countries-list'
+import { Clock } from './components/clock/clock';
+import { Welcome } from './components/welcome/welcome';
+import { ImagesList } from './components/images-list/images-list';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Welcome /> */}
+      {/* <Clock /> */}
+      <FilterableCountriesList countries={visitedCountries} />
+      <ImagesList />
     </div>
   );
 }

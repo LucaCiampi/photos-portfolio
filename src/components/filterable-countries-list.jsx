@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { SearchBar } from '../searchbar/searchbar'
-import { CountriesTable } from '../countries-table/countries-table'
-import { InteractiveSvgMap } from '../interactive-svg-map/interactive-svg-map'
+import { SearchBar } from './searchbar'
+import { CountriesTable } from './countries-table'
+import { InteractiveSvgMap } from './interactive-svg-map'
 
 export class FilterableCountriesList extends Component {
 

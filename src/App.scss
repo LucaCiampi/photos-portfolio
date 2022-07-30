@@ -20,6 +20,10 @@
   &-svg {
     height: 100%;
     width: 100%;
+
+    & path[visited="true"]:hover {
+      fill: aqua;
+    }
   }
 }
 

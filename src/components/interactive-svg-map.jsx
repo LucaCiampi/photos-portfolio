@@ -39,6 +39,7 @@ export class InteractiveSvgMap extends Component {
                 }
                 path.setAttribute("fill", "#60a3bc")
                 path.setAttribute("visited", "true")
+                //TODO: change onClick={this.onMapClick.bind(this)} for something added here
             })
         }
     }

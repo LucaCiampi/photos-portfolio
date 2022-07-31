@@ -30,6 +30,7 @@ export class CountriesTable extends React.PureComponent {
     }
 }
 
+
 const CountryRow = React.memo(function ({ country }) {
-    return <li>{country}</li>
+    return <li onClick={(e) => { window.history.pushState('', e.target.innerHTML, e.target.innerHTML);console.log(country)}}>{country}</li>
 })

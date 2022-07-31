@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import { useLocation } from "react-router-dom";
 
 export class ImagesList extends Component {
 
     constructor(props) {
         super(props)
-    }
+    }  
 
     render() {
         const imagesList = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -12,7 +13,7 @@ export class ImagesList extends Component {
         imagesList.forEach(image => {
             imagesRows.push(<ImageRow key={image} image={image} />)
         });
-        return <div className='images-list flex wrap center'>
+        return <div className='images-list flex wrap center' id='gallery'>
             {imagesRows}
         </div>
     }

@@ -26,7 +26,7 @@ export class FilterableCountriesList extends Component {
     render() {
         const { countries } = this.props
         return <div className='flex wrap'>
-            <div>
+            <div className='filterable-countries-table'>
                 <SearchBar
                     filterText={this.state.filterText}
                     onFilterTextChange={this.handleFilterTextChange}

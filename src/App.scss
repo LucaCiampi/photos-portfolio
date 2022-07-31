@@ -12,7 +12,23 @@
   justify-content: center;
 }
 
-/* Classes */
+/* Content */
+.filterable-countries-table {
+  ul {
+    padding: 0;
+  }
+
+  ul, li {
+    list-style: none;
+  }
+
+  li {
+    cursor: pointer;
+    padding: 0.4em 1em;
+    background: aquamarine;
+  }
+}
+
 .worldmap {
   width: 70vw;
   flex-grow: 1;
@@ -20,6 +36,14 @@
   &-svg {
     height: 100%;
     width: 100%;
+
+    & path {
+      transition: all 70ms ease;
+    }
+
+    & path[visited="true"] {
+      cursor: pointer;
+    }
 
     & path[visited="true"]:hover {
       fill: aqua;

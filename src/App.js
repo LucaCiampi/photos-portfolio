@@ -5,16 +5,20 @@ import { FilterableCountriesList } from './components/filterable-countries-list'
 import { Clock } from './components/clock';
 import { Welcome } from './components/welcome';
 import { ImagesList } from './components/images-list';
+import { withRouter } from 'react-router-dom';
 
-function App() {
-  return (
-    <div>
-      {/* <Welcome /> */}
-      {/* <Clock /> */}
-      <FilterableCountriesList countries={visitedCountries} />
-      <ImagesList />
-    </div>
-  );
+class App extends React.Component {
+  
+  render() {
+    return (
+      <div>
+        {/* <Welcome /> */}
+        {/* <Clock /> */}
+        <FilterableCountriesList countries={visitedCountries} />
+        <ImagesList />
+      </div>
+    );
+  }
 }
 
 export default App;
